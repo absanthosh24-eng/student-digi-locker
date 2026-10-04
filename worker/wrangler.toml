@@ -1,0 +1,17 @@
+name = "student-digital-locker-storage"
+main = "src/index.ts"
+compatibility_date = "2024-03-20"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "sdl-dev-bucket"
+preview_bucket_name = "sdl-dev-bucket-preview"
+
+[vars]
+FIREBASE_PROJECT_ID = "buildion-project" # Update with actual Firebase Project ID
+
+# The following secrets MUST be set via `wrangler secret put <NAME>`
+# R2_ACCOUNT_ID
+# R2_ACCESS_KEY_ID
+# R2_SECRET_ACCESS_KEY
+# FIRESTORE_API_KEY (or service account JSON)
